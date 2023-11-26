@@ -74,7 +74,7 @@ table {
       }
 
       td {
-        padding: 30px 5px;
+        padding: 30px px;
       }
     }
   }
@@ -181,7 +181,7 @@ table {
 // divsao que vai somar o total das compras
 
 aside {
-  margin-left: 30px;
+  margin-left: 0px;
 
   .box {
     margin-bottom: 15px;
@@ -301,7 +301,7 @@ aside {
           text-align: left;
           text-transform: uppercase;
           color: $second_normal;
-          font-size: 15px;
+          font-size: 13px;
         }
       }
     }
@@ -313,7 +313,7 @@ aside {
       tr {
         border-bottom: 2px solid $chocolate;
         padding: 0px;
-        font-size: 15px;
+        font-size: 13px;
 
         &:last-child {
           border: 0;
@@ -328,7 +328,7 @@ aside {
 
   aside {
     // divsao que vai somar o total das compras
-    margin-left: 10px;
+    margin-left: 0px;
 
     .box {
       margin-bottom: 15px;
@@ -336,8 +336,8 @@ aside {
       background-color: $second_normal;
 
       .header-compra {
-        padding: 15px 20px;
-        font-size: 15px;
+        padding: 15px 5px;
+        font-size: 13px;
         border-bottom: 1px solid $chocolate;
       }
 
