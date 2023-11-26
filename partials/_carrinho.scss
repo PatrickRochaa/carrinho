@@ -1,0 +1,328 @@
+button{
+    cursor: pointer;
+}
+
+// 
+.main{
+    max-width: 1100px;
+    background-color: rgba(245, 199, 199, 0.533);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur( 10px);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 1px solid $chocolate;
+    padding: 10px 10px 30px 10px;
+    box-shadow: 1px 3px 20px rgba(69, 28, 28, 0.5);  
+
+    .page-title{
+        font-size: 38px;
+        padding: 50px 0;
+        color: $chocolate;
+        text-align: center;
+    }
+
+   .content-carrinho{ //container carrinho de compras
+    display: flex;
+    justify-content: center;
+        .section{
+            flex:1;
+            background-color: rgba(69, 28, 28, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur( 10px);  
+            box-shadow: 1px 3px 20px rgba(69, 28, 28, 0.5);   
+        }
+
+        aside{
+            min-width: 400px;
+            background-color: transparent;   
+        }
+    }
+}
+ // divsao que vai ser adicionado os produtos
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead{
+
+        tr{
+            border-bottom:  2px solid $chocolate;
+            
+            th{
+                text-align: left;
+                padding: 10px;
+                text-transform: uppercase;
+                color: $second_normal;
+                
+            }
+        }
+    }
+
+    tbody{
+
+        tr{
+            border-bottom:  2px solid $chocolate;
+
+            &:last-child{
+                border:0;
+            }
+
+            td{
+                padding: 30px 5px;
+            }
+        }
+    }
+}
+
+.product{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    
+    img{
+        border-radius: 6px;
+        width: 180px;
+        height: 150px;
+    }
+
+    .info{
+        margin-left: 20px;
+        .name{
+            font-size: 20px;
+        }
+    }
+}
+
+.qty{
+    display: inline-flex;   
+    justify-content: space-between;
+    min-width: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30px;
+    border: 1px solid $second_normal;
+
+    span{
+        margin: 0 10px;
+        color: $primary_normal;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    button{        
+        border: 0;
+        font-size: 16px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        height: 100%;
+        transition: .5s;          
+    }
+
+    .fa-minus{
+        background-color: transparent;
+        transition: .5s;
+
+        &:hover{            
+            color:  $red;
+        }
+    }
+
+    .fa-plus{
+        
+        background-color: transparent;
+        transition: .5s;
+
+        &:hover{            
+            color:  $backgoud-comprar;
+        }
+    }
+}
+
+.remove{
+    
+    border:0;   
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;  
+
+    i{
+        color: $red;
+        font-size: 20px;
+        font-weight: 500;       
+    }
+}
+
+.remove i:hover{
+    animation: translateY 0.8s infinite alternate;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0px) scale(1);
+  }
+  to {
+    transform: translateY(-10px) scale(1.07);
+  }
+}
+
+// divsao que vai somar o total das compras
+
+aside{
+    margin-left: 30px;
+
+    .box {
+        margin-bottom: 15px;
+        border: 1px solid $chocolate;
+        background-color: $second_normal;
+
+        .header-compra{
+            padding: 15px 20px;
+            font-size: 18px;
+            border-bottom: 1px solid $chocolate;
+        }
+
+        .info{
+            padding:20px;
+
+            >div{
+                display:flex;
+                margin-bottom: 10px;
+                justify-content: space-between;
+            }
+
+            button{
+                color: $backgoud-comprar;
+                background-color: transparent;
+                border:0;
+            }
+        }
+
+        .footer-compra{
+            
+            font-size: 18px;
+            padding: 15px 20px;
+            color: $second_normal;
+            text-align: right;
+            background-color: rgba(69, 28, 28, 0.5);
+        }
+    }    
+    > button{
+        border:0;
+        font-size: 20px;
+        padding: 15px 0;            
+        width: 100%;
+        color: $white;            
+        display: block;
+        text-transform: uppercase;
+        background-color: $backgoud-comprar;
+        letter-spacing: 1px;
+        transition:  .5s ease-in-out;
+
+        &:hover{
+            background-color: $houver-comprar;
+            transform: scale(1.02);
+        }
+    }    
+}
+
+// esconder seçao base de produtos adicionados
+
+.produtoAdd.esconder{
+    display: none;
+}
+
+.listaAdd{
+   position: abasolute;
+}
+
+@media screen and (max-width: 768px){
+
+    .main{
+        flex-direction: column; 
+        padding: 0;
+    }
+
+    .product{
+
+        img{
+            border-radius: 6px;
+            width: 80px;
+            height: 70px;
+        }
+
+        .info{
+            margin-left: 10px;
+    
+            .name{
+                font-size: 15px;
+                margin-left: 2px;
+            }
+        }
+    }
+
+    .content-carrinho{ 
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+
+        .section{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+    
+        aside{
+            width: 100%;
+            margin-left: 0;
+        }
+
+    }
+
+}
+ // divsao que vai ser adicionado os produtos
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead{
+
+        tr{
+            border-bottom:  2px solid $chocolate;
+            
+            th{
+                text-align: left;
+                text-transform: uppercase;
+                color: $second_normal;
+                
+            }
+        }
+    }
+
+    tbody{
+
+        tr{
+            border-bottom:  2px solid $chocolate;
+
+            &:last-child{
+                border:0;
+            }
+
+            td{
+                padding: 30px 0;
+            }
+        }
+    }
+}
