@@ -138,10 +138,10 @@ i {
     width: 100%;
   }
   .largura {
-    right: 40px;
+    right: 5px;
   }
   a .textLogin {
-    right: -40px;
+    right: -10px;
     top: 65px;
   }
   .span .login {
@@ -183,7 +183,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(255, 174, 174, 0.1), #F4C7C7), url("../imagens/doces.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 174, 174, 0.1), #f4c7c7), url("../imagens/doces.jpg");
   left: 0;
   top: 0;
   width: 100%;
@@ -235,7 +235,7 @@ i {
   }
 }
 .about {
-  background-color: #F4C7C7;
+  background-color: #f4c7c7;
   overflow: hidden;
   color: #461d1d;
 }
@@ -769,8 +769,8 @@ button {
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
+  width: 100%;
 }
 table thead tr {
   border-bottom: 2px solid #461d1d;
@@ -936,69 +936,70 @@ aside > button:hover {
   display: none;
 }
 
-.listaAdd {
-  position: abasolute;
-}
-
 @media screen and (max-width: 768px) {
   .main {
-    flex-direction: column;
+    width: 100%;
     padding: 0;
-  }
-  .product img {
-    border-radius: 6px;
-    width: 80px;
-    height: 70px;
-  }
-  .product .info {
-    margin-left: 10px;
-  }
-  .product .info .name {
-    font-size: 15px;
-    margin-left: 2px;
   }
   .content-carrinho {
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    padding: 0;
   }
   .content-carrinho .section {
-    width: 100%;
+    flex-direction: column;
     margin-bottom: 20px;
     padding: 5px;
+    width: 100%;
   }
   .content-carrinho aside {
-    width: 100%;
     margin-left: 0;
   }
+  .product {
+    display: grid;
+    margin-left: 2px;
+  }
+  .product img {
+    border-radius: 6px;
+    width: 100px;
+    height: 90px;
+    margin-left: 2px;
+    padding-bottom: 5px;
+  }
+  .product .info {
+    margin-left: 2px;
+  }
+  .product .info .name {
+    font-size: 15px;
+    margin-left: 0px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table thead tr {
+    border-bottom: 2px solid #461d1d;
+  }
+  table thead tr th {
+    text-align: left;
+    text-transform: uppercase;
+    color: #F4C7C7;
+    font-size: 15px;
+  }
+  table tbody {
+    padding: 0px;
+  }
+  table tbody tr {
+    border-bottom: 2px solid #461d1d;
+    padding: 0px;
+    font-size: 15px;
+  }
+  table tbody tr:last-child {
+    border: 0;
+  }
+  table tbody tr td {
+    padding: 30px 0px;
+  }
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-table thead tr {
-  width: 100%;
-  border-bottom: 2px solid #461d1d;
-  font-size: 15px;
-}
-table thead tr th {
-  text-align: left;
-  text-transform: uppercase;
-  color: #F4C7C7;
-}
-table tbody tr {
-  font-size: 15px;
-  width: 100%;
-  border-bottom: 2px solid #461d1d;
-}
-table tbody tr:last-child {
-  border: 0;
-}
-table tbody tr td {
-  width: 100%;
-  padding: 30px 0;
-}
-
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
