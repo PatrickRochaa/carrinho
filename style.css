@@ -134,8 +134,8 @@ i {
 
 @media screen and (max-width: 768px) {
   menu {
-    text-align: center;
     width: 100%;
+    display: flex;
   }
   .largura {
     right: 5px;
@@ -950,16 +950,14 @@ aside > button:hover {
     flex-direction: column;
     margin-bottom: 20px;
     width: 100%;
-    background-color: green;
   }
   .main .content-carrinho aside {
     width: 100%;
-    background-color: red;
     margin-left: 0px;
   }
   .product {
     display: grid;
-    margin-left: 0px;
+    margin-left: 5px;
   }
   .product img {
     border-radius: 6px;
@@ -982,9 +980,8 @@ aside > button:hover {
   table thead tr th {
     text-align: left;
     text-transform: uppercase;
-    color: red;
+    color: #F4C7C7;
     font-size: 13px;
-    background-color: white;
   }
   table tbody {
     padding: 0px;

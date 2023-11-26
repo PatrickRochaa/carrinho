@@ -257,14 +257,11 @@ aside {
       .section {
         flex-direction: column;
         margin-bottom: 20px;
-        //padding: 5px;
         width: 100%;
-        background-color: green;
       }
 
       aside {
         width: 100%;
-        background-color: red;
         margin-left: 0px;
       }
     }
@@ -272,7 +269,7 @@ aside {
 
   .product {
     display: grid;
-    margin-left: 0px;
+    margin-left: 5px;
 
     img {
       border-radius: 6px;
@@ -302,9 +299,8 @@ aside {
           // cabeçalho da tabela
           text-align: left;
           text-transform: uppercase;
-          color: red; //$second_normal;
+          color: $second_normal;
           font-size: 13px;
-          background-color: white; //retira depois
         }
       }
     }
@@ -336,7 +332,6 @@ aside {
     .box {
       margin-bottom: 15px;
       border: 1px solid $chocolate;
-      //background-color: blue;
       width: 100%;
 
       .header-compra {
