@@ -766,6 +766,7 @@ button {
 .main .content-carrinho aside {
   min-width: 400px;
   background-color: transparent;
+  margin-left: 20px;
 }
 
 table {
@@ -941,18 +942,20 @@ aside > button:hover {
     width: 100%;
     padding: 0;
   }
-  .content-carrinho {
+  .main .content-carrinho {
     flex-direction: column;
     padding: 0;
   }
-  .content-carrinho .section {
+  .main .content-carrinho .section {
     flex-direction: column;
     margin-bottom: 20px;
     padding: 5px;
     width: 100%;
   }
-  .content-carrinho aside {
-    margin-left: 0;
+  .main .content-carrinho aside {
+    width: 100%;
+    background-color: transparent;
+    margin-left: 0px;
   }
   .product {
     display: grid;
@@ -999,6 +1002,7 @@ aside > button:hover {
   }
   aside {
     margin-left: 0px;
+    width: 100%;
   }
   aside .box {
     margin-bottom: 15px;

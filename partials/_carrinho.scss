@@ -38,6 +38,7 @@ button {
     aside {
       min-width: 400px;
       background-color: transparent;
+      margin-left: 20px;
     }
   }
 }
@@ -247,25 +248,26 @@ aside {
   .main {
     width: 100%;
     padding: 0;
-  }
 
-  .content-carrinho {
-    //container carrinho de compras
-    flex-direction: column;
-    padding: 0;
-
-    .section {
+    .content-carrinho {
+      //container carrinho de compras
       flex-direction: column;
-      margin-bottom: 20px;
-      padding: 5px;
-      width: 100%;
-    }
+      padding: 0;
 
-    aside {
-      margin-left: 0;
+      .section {
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 100%;
+      }
+
+      aside {
+        width: 100%;
+        background-color: transparent;
+        margin-left: 0px;
+      }
     }
   }
-
   .product {
     display: grid;
     margin-left: 0px;
@@ -329,6 +331,7 @@ aside {
   aside {
     // divsao que vai somar o total das compras
     margin-left: 0px;
+    width: 100%;
 
     .box {
       margin-bottom: 15px;
