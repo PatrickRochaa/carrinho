@@ -25,6 +25,7 @@ button{
    .content-carrinho{ //container carrinho de compras
     display: flex;
     justify-content: center;
+    
         .section{
             flex:1;
             background-color: rgba(69, 28, 28, 0.5);
@@ -40,32 +41,30 @@ button{
     }
 }
  // divsao que vai ser adicionado os produtos
-
-
-
 table {
     width: 100%;
     border-collapse: collapse;
 
     thead{
-
+        
         tr{
             border-bottom:  2px solid $chocolate;
             
-            th{
+            th{ // cabeçalho da tabela
                 text-align: left;
                 padding: 10px;
                 text-transform: uppercase;
                 color: $second_normal;
-                
             }
         }
     }
-
-    tbody{
+  
+    tbody{   // secao onde produto vai ser adicionado
+        padding: 10px;
 
         tr{
             border-bottom:  2px solid $chocolate;
+            padding: 10px;
 
             &:last-child{
                 border:0;
@@ -91,6 +90,7 @@ table {
 
     .info{
         margin-left: 20px;
+
         .name{
             font-size: 20px;
         }
@@ -291,16 +291,18 @@ aside{
     }
 
 }
- // divsao que vai ser adicionado os produtos
+ 
 
- table {
+ table { // divsao que vai ser adicionado os produtos
     width: 100%;
     border-collapse: collapse;
 
     thead{
 
         tr{
+            width: 100%;
             border-bottom:  2px solid $chocolate;
+            font-size: 15px;
             
             th{
                 text-align: left;
@@ -311,9 +313,13 @@ aside{
         }
     }
 
-    tbody{
+    tbody{  // secao onde produto vai ser adicionado
+
+        
 
         tr{
+            font-size: 15px;
+            width: 100%;
             border-bottom:  2px solid $chocolate;
 
             &:last-child{
@@ -321,6 +327,7 @@ aside{
             }
 
             td{
+                width: 100%;
                 padding: 30px 0;
             }
         }

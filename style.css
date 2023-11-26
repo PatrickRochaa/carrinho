@@ -44,19 +44,14 @@ menu a:hover {
   font-weight: 600;
   cursor: pointer;
   right: 20px;
-  text-align: end;
-  width: 73%;
-}
-
-.span:hover {
-  text-shadow: 0px 0px 2px #461d1d;
+  text-align: center;
 }
 
 .largura {
-  display: inline-block;
-  width: 70%;
-  text-align: end;
-  margin-bottom: 10px;
+  position: absolute;
+  right: 60px;
+  top: 0px;
+  text-align: center;
 }
 
 a .textLogin {
@@ -72,8 +67,9 @@ a .textLogin {
   font-size: 15px;
   font-family: "Sora", sans-serif;
   margin-top: 10px;
-  top: 50px;
-  right: -25px;
+  top: 55px;
+  right: -50px;
+  width: 160px;
 }
 
 a:hover .textLogin {
@@ -98,7 +94,7 @@ i {
 }
 
 .header-icons a:hover i {
-  color: #461d1d;
+  color: red;
   animation: translateY 0.8s infinite alternate;
 }
 
@@ -142,11 +138,11 @@ i {
     width: 100%;
   }
   .largura {
-    width: 17%;
-    text-align: left;
+    right: 40px;
   }
   a .textLogin {
-    right: 20px;
+    right: -40px;
+    top: 65px;
   }
   .span .login {
     font-size: 12px;
@@ -785,8 +781,12 @@ table thead tr th {
   text-transform: uppercase;
   color: #F4C7C7;
 }
+table tbody {
+  padding: 10px;
+}
 table tbody tr {
   border-bottom: 2px solid #461d1d;
+  padding: 10px;
 }
 table tbody tr:last-child {
   border: 0;
@@ -977,7 +977,9 @@ table {
   border-collapse: collapse;
 }
 table thead tr {
+  width: 100%;
   border-bottom: 2px solid #461d1d;
+  font-size: 15px;
 }
 table thead tr th {
   text-align: left;
@@ -985,12 +987,15 @@ table thead tr th {
   color: #F4C7C7;
 }
 table tbody tr {
+  font-size: 15px;
+  width: 100%;
   border-bottom: 2px solid #461d1d;
 }
 table tbody tr:last-child {
   border: 0;
 }
 table tbody tr td {
+  width: 100%;
   padding: 30px 0;
 }
 
