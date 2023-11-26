@@ -268,28 +268,27 @@ aside {
 
   .product {
     display: grid;
-    margin-left: 2px;
+    margin-left: 0px;
 
     img {
       border-radius: 6px;
-      width: 100px;
-      height: 90px;
-      margin-left: 2px;
+      width: 70px;
+      height: 60px;
       padding-bottom: 5px;
     }
 
     .info {
-      margin-left: 2px;
+      margin-left: 0px;
 
       .name {
         font-size: 15px;
-        margin-left: 0px;
       }
     }
   }
 
   table {
     // titulo divsao que vai ser adicionado os produtos
+
     border-collapse: collapse;
     width: 100%;
 
@@ -322,6 +321,39 @@ aside {
 
         td {
           padding: 30px 0px;
+        }
+      }
+    }
+  }
+
+  aside {
+    // divsao que vai somar o total das compras
+    margin-left: 10px;
+
+    .box {
+      margin-bottom: 15px;
+      border: 1px solid $chocolate;
+      background-color: $second_normal;
+
+      .header-compra {
+        padding: 15px 20px;
+        font-size: 15px;
+        border-bottom: 1px solid $chocolate;
+      }
+
+      .info {
+        padding: 10px;
+
+        > div {
+          display: flex;
+          margin-bottom: 10px;
+          justify-content: space-between;
+        }
+
+        button {
+          color: $backgoud-comprar;
+          background-color: transparent;
+          border: 0;
         }
       }
     }

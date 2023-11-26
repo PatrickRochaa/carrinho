@@ -956,21 +956,19 @@ aside > button:hover {
   }
   .product {
     display: grid;
-    margin-left: 2px;
+    margin-left: 0px;
   }
   .product img {
     border-radius: 6px;
-    width: 100px;
-    height: 90px;
-    margin-left: 2px;
+    width: 70px;
+    height: 60px;
     padding-bottom: 5px;
   }
   .product .info {
-    margin-left: 2px;
+    margin-left: 0px;
   }
   .product .info .name {
     font-size: 15px;
-    margin-left: 0px;
   }
   table {
     border-collapse: collapse;
@@ -998,6 +996,32 @@ aside > button:hover {
   }
   table tbody tr td {
     padding: 30px 0px;
+  }
+  aside {
+    margin-left: 10px;
+  }
+  aside .box {
+    margin-bottom: 15px;
+    border: 1px solid #461d1d;
+    background-color: #F4C7C7;
+  }
+  aside .box .header-compra {
+    padding: 15px 20px;
+    font-size: 15px;
+    border-bottom: 1px solid #461d1d;
+  }
+  aside .box .info {
+    padding: 10px;
+  }
+  aside .box .info > div {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  aside .box .info button {
+    color: rgb(109, 180, 3);
+    background-color: transparent;
+    border: 0;
   }
 }
 body {
