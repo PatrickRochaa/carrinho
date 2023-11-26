@@ -764,7 +764,7 @@ button {
   box-shadow: 1px 3px 20px rgba(69, 28, 28, 0.5);
 }
 .main .content-carrinho aside {
-  min-width: 400px;
+  width: 400px;
   background-color: transparent;
   margin-left: 20px;
 }
@@ -949,12 +949,12 @@ aside > button:hover {
   .main .content-carrinho .section {
     flex-direction: column;
     margin-bottom: 20px;
-    padding: 5px;
     width: 100%;
+    background-color: green;
   }
   .main .content-carrinho aside {
     width: 100%;
-    background-color: transparent;
+    background-color: red;
     margin-left: 0px;
   }
   .product {
@@ -975,7 +975,6 @@ aside > button:hover {
   }
   table {
     border-collapse: collapse;
-    width: 100%;
   }
   table thead tr {
     border-bottom: 2px solid #461d1d;
@@ -983,8 +982,9 @@ aside > button:hover {
   table thead tr th {
     text-align: left;
     text-transform: uppercase;
-    color: #F4C7C7;
+    color: red;
     font-size: 13px;
+    background-color: white;
   }
   table tbody {
     padding: 0px;
@@ -1002,12 +1002,11 @@ aside > button:hover {
   }
   aside {
     margin-left: 0px;
-    width: 100%;
   }
   aside .box {
     margin-bottom: 15px;
     border: 1px solid #461d1d;
-    background-color: #F4C7C7;
+    width: 100%;
   }
   aside .box .header-compra {
     padding: 15px 5px;

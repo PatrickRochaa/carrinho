@@ -36,7 +36,7 @@ button {
     }
 
     aside {
-      min-width: 400px;
+      width: 400px;
       background-color: transparent;
       margin-left: 20px;
     }
@@ -257,17 +257,19 @@ aside {
       .section {
         flex-direction: column;
         margin-bottom: 20px;
-        padding: 5px;
+        //padding: 5px;
         width: 100%;
+        background-color: green;
       }
 
       aside {
         width: 100%;
-        background-color: transparent;
+        background-color: red;
         margin-left: 0px;
       }
     }
   }
+
   .product {
     display: grid;
     margin-left: 0px;
@@ -292,8 +294,6 @@ aside {
     // titulo divsao que vai ser adicionado os produtos
 
     border-collapse: collapse;
-    width: 100%;
-
     thead {
       tr {
         border-bottom: 2px solid $chocolate;
@@ -302,8 +302,9 @@ aside {
           // cabeçalho da tabela
           text-align: left;
           text-transform: uppercase;
-          color: $second_normal;
+          color: red; //$second_normal;
           font-size: 13px;
+          background-color: white; //retira depois
         }
       }
     }
@@ -331,12 +332,12 @@ aside {
   aside {
     // divsao que vai somar o total das compras
     margin-left: 0px;
-    width: 100%;
 
     .box {
       margin-bottom: 15px;
       border: 1px solid $chocolate;
-      background-color: $second_normal;
+      //background-color: blue;
+      width: 100%;
 
       .header-compra {
         padding: 15px 5px;
