@@ -957,7 +957,7 @@ aside > button:hover {
   }
   .product {
     display: grid;
-    margin-left: 5px;
+    margin-left: 8px;
   }
   .product img {
     border-radius: 6px;
